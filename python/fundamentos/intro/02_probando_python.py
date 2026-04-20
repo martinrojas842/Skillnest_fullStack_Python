@@ -1,5 +1,4 @@
 import random
-
 """
 Este archivo sirve para practicar la ejecución de archivos en Python.
 Incluimos un ejemplo con un bucle y selección aleatoria de días,
