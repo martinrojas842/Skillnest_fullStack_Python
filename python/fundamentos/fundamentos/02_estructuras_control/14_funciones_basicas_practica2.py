@@ -46,10 +46,10 @@ def valores_multiplicados_segundo(c):
 # Ejercicio 5
 # Genera precio fijo
 def valor_multiplicado_longitud(d, e):
-    n = []
+    eli = []
     for i in range(e) :
-        n.append(d*e)
-    return n
+        eli.append(d*e)
+    return eli
 # Debe retornar: [10, 10]
 # Debe retornar: [35, 35, 35, 35, 35]
 
@@ -95,4 +95,3 @@ while continuar:
         continuar = False
     else:
         limpiar_consola()
-        print("Opcion no valida, intenta otra vez")
