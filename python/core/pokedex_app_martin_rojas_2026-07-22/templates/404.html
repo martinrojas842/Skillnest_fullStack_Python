@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon no encontrado - 404</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <div class="error-wrapper">
+        <div class="error-card">
+            <h1 class="title-primary">¡Oh no!</h1>
+            <p class="error-message">{{ mensaje }}</p>
+            
+            <h2 class="title-warning">⚠️ Pokémon no encontrado</h2>
+            
+            <p class="subtitle-text">
+                Tal vez este Pokémon aún no ha sido descubierto, o quizás has escrito mal su nombre.
+            </p>
+
+            <a href="/pokemon" class="btn-primary">
+                🏠 Volver a la Pokédex
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
