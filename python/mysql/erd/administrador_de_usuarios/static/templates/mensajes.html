@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mensajes</title>
+    <link rel="stylesheet" href="C:\Users\4.C Programación\Documents\GitHub\Skillnest_fullStack_Python\python\mysql\erd\administrador_de_usuarios\static\css\style.css">
+</head>
+<body>
+    <main class="app-container">
+        <h1 class="user-profile-title">Andrea</h1>
+        <h3 class="section-subtitle">Mensajes a Andrea</h3>
+        
+        <form class="message-form-box" action="#" onsubmit="event.preventDefault(); alert('Mensaje enviado');">
+            <input type="text" class="input-field" placeholder="Escribe un mensaje..." required>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+
+        <div class="message-stream">
+            <div class="message-card">
+                <a href="#" class="meta-link">Mensaje de Katya, hace 5 horas</a>
+                <p class="message-text">lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+
+            <div class="comments-branch">
+                <h4>Comentarios</h4>
+                
+                <div class="comment-card">
+                    <a href="#" class="meta-link">Comentario de Patricia, hace 1 hora</a>
+                    <p class="message-text">lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+
+                <form class="message-form-box" action="#" onsubmit="event.preventDefault(); alert('Comentario enviado');">
+                    <input type="text" class="input-field" placeholder="Escribe un comentario..." required>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+            </div>
+        </div>
+        
+        <p><a href="#" class="back-link" onclick="window.history.back(); return false;">&larr; Volver Atrás</a></p>
+    </main>
+</body>
+</html>

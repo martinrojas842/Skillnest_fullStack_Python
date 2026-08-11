@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Usuario</title>
+    <link rel="stylesheet" href="C:\Users\4.C Programación\Documents\GitHub\Skillnest_fullStack_Python\python\mysql\erd\administrador_de_usuarios\static\css\style.css">
+</head>
+<body>
+    <main class="app-container">
+        <div class="form-container-centered">
+            <h2>Editar Usuario</h2>
+            <form action="dashboard_admin.html" method="GET">
+                <div class="form-grid-row">
+                    <label>Nombre</label>
+                    <input type="text" value="Patricia" required>
+                </div>
+                <div class="form-grid-row">
+                    <label>E-mail</label>
+                    <input type="email" value="patricia@codingdojo.com" required>
+                </div>
+                <div class="form-grid-row">
+                    <label>Contraseña</label>
+                    <input type="password" value="password123" required>
+                </div>
+                <div class="form-grid-row">
+                    <label>Conf. Contraseña</label>
+                    <input type="password" value="password123" required>
+                </div>
+                <div class="form-grid-row">
+                    <label>Tipo de Usuario</label>
+                    <select>
+                        <option value="admin" selected>Administrador</option>
+                        <option value="user">Usuario</option>
+                    </select>
+                </div>
+                <div class="action-row">
+                    <button type="submit" class="btn">Crear</button>
+                </div>
+            </form>
+            <p><a href="dashboard_admin.html" class="back-link">&larr; Cancelar</a></p>
+        </div>
+    </main>
+</body>
+</html>
