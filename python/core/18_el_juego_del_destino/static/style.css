@@ -1,0 +1,308 @@
+/* Importación de tipografía limpia y moderna */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: #0c0a1d;
+    /* Fondo estrellado en cuadrícula idéntico a la imagen */
+    background-image: 
+        radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.12) 1.5px, transparent 1.5px),
+        radial-gradient(circle at 0% 0%, rgba(255, 255, 255, 0.08) 3px, transparent 3px);
+    background-size: 36px 36px, 120px 120px;
+    background-position: 0 0, 0 0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px 15px;
+    position: relative;
+}
+
+/* Botón flotante del sol en la esquina superior derecha */
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 38px;
+    height: 38px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e2b857;
+    font-size: 16px;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+}
+
+/* Tarjeta Principal */
+.card {
+    background: #151428;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 440px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+}
+
+/* Encabezado morado/oscuro */
+.card-header {
+    padding: 32px 24px 24px 24px;
+    text-align: center;
+    color: white;
+}
+
+.icon-circle {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #6c2bd9, #4f17c4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    font-size: 20px;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(108, 43, 217, 0.4);
+}
+
+.icon-circle.yellow {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+}
+
+.card-header h1 {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    margin-bottom: 6px;
+}
+
+.card-header p {
+    font-size: 13px;
+    color: #9ca3af;
+    font-weight: 400;
+}
+
+/* Cuerpo blanco de la tarjeta */
+.card-body {
+    background: #f8fafc;
+    padding: 28px 24px;
+    border-radius: 20px 20px 0 0;
+}
+
+/* Inputs y Formularios */
+.input-container {
+    margin-bottom: 12px;
+}
+
+.input-group {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.input-group:focus-within {
+    border-color: #6c2bd9;
+    box-shadow: 0 0 0 3px rgba(108, 43, 217, 0.1);
+}
+
+.input-group i {
+    color: #475569;
+    margin-right: 12px;
+    width: 16px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 13.5px;
+    color: #1e293b;
+    background: transparent;
+}
+
+.input-group input::placeholder {
+    color: #94a3b8;
+}
+
+.help-text {
+    display: block;
+    font-size: 11px;
+    color: #64748b;
+    margin: 5px 0 0 4px;
+}
+
+/* Bola de Cristal 3D (Captura 1) */
+.crystal-ball-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 22px 0 26px 0;
+}
+
+.crystal-ball {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, #ffffff 0%, #b8b3f8 35%, #7c52f2 70%, #4c1d95 100%);
+    box-shadow: 
+        inset -10px -10px 20px rgba(0, 0, 0, 0.3),
+        inset 10px 10px 15px rgba(255, 255, 255, 0.8),
+        0 12px 25px rgba(124, 82, 242, 0.35);
+}
+
+/* Botón Violeta */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #6c2bd9, #5b21b6);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(108, 43, 217, 0.3);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #5b21b6, #4c1d95);
+    box-shadow: 0 6px 16px rgba(108, 43, 217, 0.4);
+    transform: translateY(-1px);
+}
+
+/* Estilos para la vista de destino revelado (futuro.html) */
+.alert {
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    font-size: 13.5px;
+    line-height: 1.5;
+}
+
+.alert-success {
+    background: #eefdf4;
+    border-left: 4px solid #22c55e;
+    color: #15803d;
+    text-align: center;
+}
+
+.star-icon {
+    font-size: 20px;
+    color: #22c55e;
+    margin-bottom: 6px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.info-card {
+    background: #ffffff;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #f1f5f9;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+.info-card h3 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #6c2bd9;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.info-card p {
+    font-size: 11.5px;
+    color: #475569;
+    line-height: 1.4;
+}
+
+.color-preview-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin: 6px 0;
+}
+
+.color-dot {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.15), 0 2px 4px rgba(0,0,0,0.08);
+}
+
+.lucky-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.lucky-section h3 {
+    color: #6c2bd9;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.lucky-number {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #6c2bd9, #4f17c4);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 8px;
+    font-weight: 700;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(108, 43, 217, 0.3);
+}
+
+.lucky-section p {
+    font-size: 11px;
+    color: #64748b;
+}
+
+.alert-purple {
+    background: #f5f3ff;
+    border-left: 4px solid #6c2bd9;
+    color: #4c1d95;
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 11px;
+    color: #94a3b8;
+    margin-top: 18px;
+}
